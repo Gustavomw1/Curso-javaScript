@@ -11,35 +11,36 @@ function verificar() {
         var genero = '';
         var img = document.createElement('img');
         img.setAttribute('id', 'foto');
-        if (fsex && fsex.value == 'homem') {
-            genero = 'homem';
-            if (idade >= 0 && idade < 10) {
-                // Criança
-                img.setAttribute('src', 'criança_h.jpg');
-            } else if (idade < 21) {
-                // Jovem
-                img.setAttribute('src', 'jovem_h.jpg');
-            } else if (idade < 50) {
-                // Adulto
-                img.setAttribute('src', 'adulto_h.jpg');
-            } else {
-                // Idoso
-                img.setAttribute('src', 'idoso_h.jpg');
-            }
-        } else if (fsex && fsex.value == 'mulher') {
+        if (fsex && fsex.value == 'mulher') {
             genero = 'mulher';
             if (idade >= 0 && idade < 10) {
                 // Criança
-                img.setAttribute('src', 'criança_m.jpg');
+                img.setAttribute('src', 'criança f.jpg');
             } else if (idade < 21) {
                 // Jovem
-                img.setAttribute('src', 'jovem_m.jpg');
+                img.setAttribute('src', 'jovem f.jpg');
             } else if (idade < 50) {
                 // Adulto
-                img.setAttribute('src', 'adulto_m.jpg');
+                img.setAttribute('src', 'adulto f.jpg');
             } else {
                 // Idoso
-                img.setAttribute('src', 'idoso_m.jpg');
+                img.setAttribute('src', 'idosa f.jpg');
+            }
+            
+        } else if (fsex && fsex.value == 'homem') {
+            genero = 'homem';
+            if (idade >= 0 && idade < 10) {
+                // Criança
+                img.setAttribute('src', 'crianca-m-.jpg');
+            } else if (idade < 21) {
+                // Jovem
+                img.setAttribute('src', 'jovem-m-.jpg');
+            } else if (idade < 50) {
+                // Adulto
+                img.setAttribute('src', 'adulto-m-.jpg');
+            } else {
+                // Idoso
+                img.setAttribute('src', 'idoso-m-.jpg');
             }
         }
         res.style.textAlign = 'center';
